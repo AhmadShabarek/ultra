@@ -1,0 +1,85 @@
+.skills{
+    padding: 50px 0px;
+    overflow: hidden;
+}
+.skills .profile{
+    width: 50%;
+    float: left;
+}
+.skills .skill{
+    width: 50%;
+    float: left;
+}
+.profile h2 , .skill h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.profile span{
+    font-weight: bold;
+}
+.profile ul{
+    list-style: none;
+}
+.profile li{
+    margin-bottom: 8px;
+}
+.profile ul li span{
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+}
+.profile ul li a{
+    color: #eb5424;
+    font-style: none;
+    text-decoration: none;
+}
+.skill p{
+    font-size: 16px;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.bar{
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 5px 0px;
+}
+.bar .tit{
+    float: left;
+    margin-left: 30px;
+}
+.bar .per{
+    float: right;
+    margin-right: 80px;
+}
+.bar .parent {
+    height: 2px;
+    background: #f8f8f8;
+    clear: both;
+    position: relative;
+    top: 4.8px;
+}
+.bar .parent span{
+    background: #eb5424;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.bar .parent .sp1{
+    width: 100%;
+}
+.bar .parent .sp2{
+    width: 90%;
+}
+.bar .parent .sp3{
+    width: 75%;
+}
+@media (max-width:568px){
+    .skills .profile,.skills .skill{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}

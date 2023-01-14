@@ -1,0 +1,46 @@
+.work{
+    height: auto;
+    padding: 20px 0px;
+    background: #fff;
+    overflow: hidden;
+}
+.work h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.work .part{
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid grey;
+    height: auto;
+    padding: 80px 0px;
+    margin-left: 3%;
+}
+.work .part .icon{
+    color: grey;
+    margin-bottom: 10px;
+}
+.work .part h4{
+    color: #eb5424;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.work .part hr{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.work .part p{
+    font-size: 15px;
+    color: gray;
+    padding: 20px;
+}
+@media (max-width:768px){
+    .work .part{
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+}

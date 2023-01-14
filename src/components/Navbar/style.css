@@ -1,0 +1,79 @@
+.navbar{
+    padding: 10px 0px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+.navbar .log {
+    width: 50%;
+    float: left;
+}
+.navbar .ul-list {
+    width: 50%;
+    float:  left;
+    list-style: none;
+    padding: 0;
+}
+.navbar .log .logo-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar input, .navbar label {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}
+.navbar input:checked ~ .ul-list{
+    display: block;
+}
+.navbar input:checked ~ label{
+    background: url('/images/Navbar/close.png') no-repeat;
+    background-size: cover;
+}
+.navbar input {
+    display: none;
+}
+.navbar label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('/images/Navbar/open.png') no-repeat;
+    background-size: cover;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.navbar .ul-list .list-item {
+    display: inline-block;
+}
+.navbar .ul-list .list-item a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+.navbar .ul-list .list-item a:hover{
+    color: #eb5424;
+}
+/* media for navbar*/
+@media (min-width : 1269px){
+    .navbar label {
+        display: none;
+    }
+}
+@media (max-width : 1268px){
+    .navbar .log {
+        width: 100%;
+        float: none;
+    }
+    .navbar .ul-list {
+        width: 100%;
+        float:  none;
+        margin-top: 15px;
+        display: none;
+    }
+    .navbar .ul-list .list-item {
+        display: block;
+        text-align: center;
+    }
+}
